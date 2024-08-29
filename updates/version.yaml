@@ -10,7 +10,7 @@
     - 'Create pages Table'
     - v1.0.3/create_pages_table.php
 1.0.4:
-    - 'Create partials Table'
+    - 'Create types Table'
     - v1.0.4/create_types_table.php
 1.0.5:
     - 'Seed Types'
