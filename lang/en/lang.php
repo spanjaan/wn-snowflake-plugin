@@ -35,7 +35,7 @@ return [
     'component' => [
         'sfpage' => [
             'name' => 'Snowflake',
-            'description' => 'Render the Snowflake in layouts, pages and partials.',
+            'description' => 'Render the Snowflake in layouts and pages.',
         ],
     ],
 ];
