@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    cms_key:
+        label: Snowflake Key
+        type: text
+        searchable: true
+    type[name]:
+        label: Type
+        type: text
+        searchable: true
+    desc:
+        label: Description
+        type: text
+        searchable: true
+    content:
+        label: Content
+        type: partial
+        path: $/spanjaan/snowflake/models/element/_content.htm
+        searchable: true
+    order:
+        label: Position

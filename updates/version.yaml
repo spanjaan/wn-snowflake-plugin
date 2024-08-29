@@ -1,0 +1,18 @@
+1.0.0:
+    - 'First version of snowflake'
+1.0.1:
+    - 'Create elements Table'
+    - v1.0.1/create_elements_table.php
+1.0.2:
+    - 'Create layouts Table'
+    - v1.0.2/create_layouts_table.php
+1.0.3:
+    - 'Create pages Table'
+    - v1.0.3/create_pages_table.php
+1.0.4:
+    - 'Create partials Table'
+    - v1.0.4/create_types_table.php
+1.0.5:
+    - 'Seed Types'
+    - v1.0.5/seed_types.php
+    - v1.0.5/add_media_types.php

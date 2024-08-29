@@ -1,0 +1,25 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        _section:
+            tab: spanjaan.snowflake::lang.models.settings.tab
+            type: section
+            label: spanjaan.snowflake::lang.models.settings.section
+
+        custom_name:
+            tab: spanjaan.snowflake::lang.models.settings.tab
+            label: spanjaan.snowflake::lang.models.settings.custom_name
+            type: text
+            span: right
+            default: Snowflake
+        markdown_mode:
+            tab: spanjaan.snowflake::lang.models.settings.tab
+            label: spanjaan.snowflake::lang.models.settings.markdown_mode
+            type: switch
+            span: left
+            comment: spanjaan.snowflake::lang.models.settings.markdown_mode_comment
+            default: split
+

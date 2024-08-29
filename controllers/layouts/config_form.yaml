@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'spanjaan.snowflake::lang.models.layout.label'
+
+# Model Form Field configuration
+form: $/spanjaan/snowflake/models/element/fields.yaml
+
+# Model Class name
+modelClass: SpAnjaan\Snowflake\Models\Element
+
+# Default redirect location
+defaultRedirect: spanjaan/snowflake/layouts
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: spanjaan/snowflake/layouts/update/:id
+    redirectClose: spanjaan/snowflake/layouts
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: spanjaan/snowflake/layouts
+    redirectClose: spanjaan/snowflake/layouts
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

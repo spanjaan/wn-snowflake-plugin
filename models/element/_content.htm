@@ -1,0 +1,67 @@
+<?php
+
+use \SpAnjaan\Snowflake\Classes\EnumFieldType;
+use System\Classes\ImageResizer;
+switch ($record->attributes['type_id']) {
+
+    case EnumFieldType::Image :
+        if (! $record->image) {
+            echo "- no image uploaded -";
+            break;
+        } else {
+            $src = $record->image->getThumb(100,100);
+            echo "<img src='$src' alt='' />";
+        }
+    break;
+
+    case EnumFieldType::File :
+        if (! $record->file) {
+            echo "- no file uploaded -";
+        } else {
+            echo $record->file->getFilename();
+        }
+    break;
+
+    case EnumFieldType::Color :
+        if (empty($value)) {
+            echo "- no color defined -";
+        } else
+        {
+            $color = $value;
+            echo "<div style='width:20px;height:20px;background-color:$color;'> </div>";
+        }
+    break;
+    case EnumFieldType::MediaImage :
+        if (empty($value)) {
+            echo "- no media image selected -";
+        } else {
+            $path = media_path($value);
+            $thumb_path = ImageResizer::filterGetUrl($path,100,100);
+
+            echo "<img src='$thumb_path' alt='' />";
+        }
+    break;
+
+    case EnumFieldType::MediaFile :
+        if (empty($value)) {
+            echo "- no media file selected -";
+        } else {
+            echo basename($value);
+        }
+    break;
+
+    default:
+        if (empty($value)) {
+            echo "- no content yet -";
+            break;
+        }
+        if (strlen($value) > 50) {
+            echo substr($value, 0, 50) . '  ( ...)';
+        } else {
+            echo $value;
+        }
+    break;
+
+}
+
+?>

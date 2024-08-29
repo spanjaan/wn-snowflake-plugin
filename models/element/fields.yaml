@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    cms_key:
+        label: Snowflake Key
+        type: text
+        span: left
+        readOnly: true
+    type:
+        label: Type
+        type: relation
+        nameFrom: name
+        span: right
+        readOnly: true
+    desc:
+        label: Description
+        type: text
+        span: full
+        readonly: true
