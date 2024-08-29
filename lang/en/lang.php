@@ -27,10 +27,6 @@ return [
             'label' => 'Page',
             'label_plural' => 'Pages',
         ],
-        'partial' => [
-            'label' => 'Partial',
-            'label_plural' => 'Partials',
-        ],
         'layout' => [
             'label' => 'Layout',
             'label_plural' => 'Layouts',
